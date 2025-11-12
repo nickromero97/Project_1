@@ -19,5 +19,5 @@ scatter_button = st.button('Construir gráfico de dispersión')
 
 if scatter_button:
     st.write('Gráfico de dispersión: Precio vs Año por fabricante')
-    fig2 = px.scatter(df, x="year", y="price", color="manufacturer", title="Precio vs Año")
+    fig2 = px.scatter(df, x="model_year", y="price", color="model", title="Precio vs Año")
     st.plotly_chart(fig2, use_container_width=True)
